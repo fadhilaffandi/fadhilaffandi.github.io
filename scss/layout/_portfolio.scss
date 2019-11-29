@@ -1,9 +1,9 @@
 // Styling for the portfolio section
-#portfolio,
-.timeline-image {
+#portfolio {
   .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
+    // margin: 0 0 15px;
+
     .portfolio-link {
       position: relative;
       display: block;
@@ -69,7 +69,7 @@
 @media (min-width: 767px) {
   #portfolio {
     .portfolio-item {
-      margin: 0 0 30px;
+      // margin: 0 0 30px;
     }
   }
 }
