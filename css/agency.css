@@ -386,8 +386,7 @@ header.masthead .intro-text .intro-heading {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40px;
   width: 2px;
   margin-left: -1.5px;
   content: "";
@@ -413,7 +412,7 @@ header.masthead .intro-text .intro-heading {
   position: relative;
   float: right;
   width: 100%;
-  padding: 90px 0px 0 0px;
+  padding: 0 20px 0 100px;
   text-align: left;
 }
 
@@ -434,10 +433,9 @@ header.masthead .intro-text .intro-heading {
 .timeline > li .timeline-image {
   position: absolute;
   z-index: 100;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 210px;
-  min-height: 210px;
+  left: 0;
+  width: 80px;
+  height: 80px;
   margin-left: 0;
   text-align: center;
   color: white;
@@ -562,6 +560,29 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .timeline:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline > li .timeline-panel {
+    margin: 225px 0px 0 0px;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  .timeline > li .timeline-image {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 210px;
+    min-height: 210px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    margin: 225px 0px 0 0px;
+    padding: 0;
+    background-color: #f8f9fa;
   }
 }
 
