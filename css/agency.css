@@ -383,7 +383,7 @@ header.masthead .intro-text .intro-heading {
   left: 40px;
   width: 2px;
   margin-left: -1.5px;
-  content: '';
+  content: "";
   background-color: #e9ecef;
 }
 
@@ -395,7 +395,7 @@ header.masthead .intro-text .intro-heading {
 
 .timeline > li:after, .timeline > li:before {
   display: table;
-  content: ' ';
+  content: " ";
 }
 
 .timeline > li:after {
@@ -475,6 +475,7 @@ header.masthead .intro-text .intro-heading {
 
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
+  font-style: oblique;
 }
 
 .timeline .timeline-body > ul,
