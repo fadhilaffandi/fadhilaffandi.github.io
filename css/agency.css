@@ -296,12 +296,6 @@ header.masthead .intro-text .intro-heading {
   z-index: 2;
 }
 
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    border: 1px solid black;
-  }
-}
-
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
@@ -495,7 +489,7 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .timeline > li .timeline-panel {
     float: left;
