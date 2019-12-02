@@ -118,7 +118,6 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -368,6 +367,12 @@ header.masthead .intro-text .intro-heading {
   /* IE 9 */
   transform: rotate(90deg);
   background-color: #212529;
+}
+
+@media (max-width: 425px) {
+  .portfolio-modal .modal-dialog {
+    margin: 0;
+  }
 }
 
 .timeline {
