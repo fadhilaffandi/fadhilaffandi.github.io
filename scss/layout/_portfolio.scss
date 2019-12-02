@@ -142,3 +142,11 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .portfolio-modal {
+    .modal-dialog {
+      margin: 0;
+    }
+  }
+}
