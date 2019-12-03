@@ -20,6 +20,8 @@
     &:hover {
       color: darken($primary, 10%);
     }
+    font-weight: 600;
+    // font-style: italic;
   }
   .navbar-nav {
     .nav-item {
