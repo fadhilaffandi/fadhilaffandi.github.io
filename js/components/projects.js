@@ -40,7 +40,7 @@ function buildDesc(project) {
     // append descriptions statements to project
     let techSubheading = buildElementWithClass("", "h5");
     techSubheading.innerHTML = "Technologies used";
-    let tech = buildList(project.tech);
+    let tech = buildInlineList(project.tech, "tech p-0");
 
     let descSubheading = buildElementWithClass("", "h5");
     descSubheading.innerHTML = "Description";
@@ -84,15 +84,32 @@ function buildCaption(caption, subcaption, githubUrl) {
 }
 
 
-function buildList(content) {
-    let ul = buildElementWithClass("", "ul");
-    Object.entries(content).forEach(([key, desc]) => {
+function buildList(content, ulClass = "") {
+    let ul = buildElementWithClass(ulClass, "ul");
+    content.forEach(desc => {
         let li = buildElementWithClass("", "li");
         li.innerHTML = desc;
         ul.appendChild(li);
     });
 
     return ul;
+}
+
+function buildInlineList(content, ulClass = "") {
+
+    let ul = buildElementWithClass(ulClass, "ul");
+
+    Object.entries(content).forEach(([key, item]) => {
+
+        item.forEach(i => {
+            let li = buildElementWithClass(key, "li");
+            li.innerHTML = i;
+            ul.appendChild(li);
+        });
+    });
+
+    return ul;
+
 }
 
 function buildElementWithClass(classlist, element = "div") {
