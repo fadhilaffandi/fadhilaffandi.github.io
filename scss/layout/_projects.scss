@@ -21,35 +21,72 @@
         }
         .portfolio-content {
             text-align: left;
+            ul.tech {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    padding: 8px;
+                    margin: 3px;
+                    border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    transition: 0.3s;
+                }
+            }
         }
-        //   .portfolio-link {
-        //     position: relative;
-        //     display: block;
-        //     margin: 0 auto;
-        //     .portfolio-hover {
-        //         display: flex;
-        //         position: absolute;
-        //         width: 100%;
-        //         height: 100%;
-        //         background: fade-out($primary, 0.1);
-        //         align-items: center;
-        //         justify-content: center;
-        //         opacity: 0;
-        //         transition: opacity ease-in-out 0.25s;
-        //         .portfolio-hover-content {
-        //             font-size: 1.25rem;
-        //             color: white;
-        //         }
-        //     }
-        //     &:hover {
-        //         .portfolio-hover {
-        //             opacity: 1;
-        //         }
-        //     }
-        // }
     }
 }
 
+.viz {
+    background-color: rgba(lighten($primary, 30%), 0.3);
+    &:hover {
+        background-color: rgba(lighten($primary, 10%), 0.8);
+        color: white;
+    }
+}
+
+.model {
+    background-color: rgba(lighten($tertiary, 30%), 0.3);
+    &:hover {
+        background-color: rgba(lighten($tertiary, 5%), 0.9);
+        color: white;
+    }
+}
+
+.packages {
+    background-color: rgba(lighten($secondary, 30%), 0.3);
+    &:hover {
+        background-color: rgba(lighten($secondary, 10%), 0.8);
+        color: white;
+    }
+}
+
+//   .portfolio-link {
+//     position: relative;
+//     display: block;
+//     margin: 0 auto;
+//     .portfolio-hover {
+//         display: flex;
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         background: fade-out($primary, 0.1);
+//         align-items: center;
+//         justify-content: center;
+//         opacity: 0;
+//         transition: opacity ease-in-out 0.25s;
+//         .portfolio-hover-content {
+//             font-size: 1.25rem;
+//             color: white;
+//         }
+//     }
+//     &:hover {
+//         .portfolio-hover {
+//             opacity: 1;
+//         }
+//     }
+// }
 // .portfolio-modal {
 //     .modal-dialog {
 //         margin: 1rem;
