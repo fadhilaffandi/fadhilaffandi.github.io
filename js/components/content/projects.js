@@ -19,7 +19,7 @@ const PROJECTS = [{
         "caption": "Ames Housing Predictions",
         "subcaption": "subcaption!",
         "tech": {
-            "model": ["Ridge", "Lasso", "Simple Linear Regressions"],
+            "model": ["Simple Linear Regressions", "Ridge", "Lasso"],
             "viz": ["Matplotlib", "Seaborn"],
             "packages": ["Scikit-Learn", "SciPy", "Pandas", "NumPy"]
         },
