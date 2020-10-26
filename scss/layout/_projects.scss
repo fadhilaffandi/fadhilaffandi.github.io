@@ -24,25 +24,41 @@
             ul.tech {
                 list-style-type: none;
                 display: flex;
+                flex-wrap: wrap;
                 li {
                     padding: 10px;
-                    margin-right: 5px;
-                    margin-left: 5px;
+                    margin: 5px;
                     border-radius: 10px;
                     -moz-border-radius: 10px;
                     -webkit-border-radius: 10px;
-                    &.viz {
-                        background-color: rgba(lighten($primary, 10%), 0.3);
-                    }
-                    &.model {
-                        background-color: rgba(lighten($tertiary, 10%), 0.3);
-                    }
-                    &.packages {
-                        background-color: rgba(lighten($secondary, 10%), 0.3);
-                    }
+                    transition: 0.3s;
                 }
             }
         }
+    }
+}
+
+.viz {
+    background-color: rgba(lighten($primary, 30%), 0.3);
+    &:hover {
+        background-color: rgba(lighten($primary, 10%), 0.8);
+        color: white;
+    }
+}
+
+.model {
+    background-color: rgba(lighten($tertiary, 30%), 0.3);
+    &:hover {
+        background-color: rgba(lighten($tertiary, 5%), 0.9);
+        color: white;
+    }
+}
+
+.packages {
+    background-color: rgba(lighten($secondary, 30%), 0.3);
+    &:hover {
+        background-color: rgba(lighten($secondary, 10%), 0.8);
+        color: white;
     }
 }
 

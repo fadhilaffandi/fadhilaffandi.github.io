@@ -55,7 +55,7 @@ function buildDesc(project) {
     descContainer.appendChild(description);
 
 
-    let descWrapper = buildElementWithClass("col-lg-8 col-12 pl-0");
+    let descWrapper = buildElementWithClass("col-lg-8 col-12");
     descWrapper.appendChild(captionContainer);
     descWrapper.appendChild(descContainer);
 
