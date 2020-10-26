@@ -12,13 +12,13 @@
         @include heading-font;
     }
     .navbar-brand {
-        color: lighten($primary, 20%);
+        color: lighten($primary, 25%);
         @include script-font;
         &.active,
         &:active,
         &:focus,
         &:hover {
-            color: lighten($primary, 30%);
+            color: lighten($primary, 15%);
         }
         font-weight: 600;
         // font-style: italic;
@@ -51,7 +51,8 @@
         border: none;
         background-color: transparent;
         .navbar-brand {
-            font-size: 2em;
+            font-size: 1.75em;
+            font-style: italic;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
