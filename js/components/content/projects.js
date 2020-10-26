@@ -2,16 +2,14 @@ const PROJECTS = [{
         "id": 0,
         "caption": "SAT vs ACT Analysis",
         "subcaption": "Comparison of SAT and ACT scores between years 2017 & 2018",
-        "tech": [
-            "Matplotlib",
-            "Seaborn",
-            "Pandas",
-            "Numpy"
-        ],
+        "tech": {
+            "viz": ["Matplotlib", "Seaborn"],
+            "packages": ["Pandas", "NumPy"]
+        },
+
         "descriptions": [
-            "Used the analysis performed to make recommendations to improve SAT participation of states with lower rates",
-            "placeholder for description2\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description3\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
+            "Sought to understand the differences and trends of both SAT and ACT status quo and make recommendations to improve SAT participation of states with lower rates",
+            "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_1",
         "imageUrl": "img/team/2.jpg"
@@ -20,40 +18,61 @@ const PROJECTS = [{
         "id": 1,
         "caption": "Ames Housing Predictions",
         "subcaption": "subcaption!",
-        "tech": [],
+        "tech": {
+            "model": ["Ridge", "Lasso", "Simple Linear Regressions"],
+            "viz": ["Matplotlib", "Seaborn"],
+            "packages": ["Scikit-Learn", "SciPy", "Pandas", "NumPy"]
+        },
         "descriptions": [
-            "placeholder for description1\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description2\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description3\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
+            "Predictions generated through comparing Ridge, Lasso and Simple Linear Regressions",
+            "Data set of 81 columns and about 2000 rows of data",
+            "Accuracy of about 82%",
+            "Completed on Jupyter Notebook with Python"
         ],
-        "githubUrl": "www.github.com",
+        "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_2",
         "imageUrl": "img/team/2.jpg"
     },
     {
         "id": 2,
-        "caption": "SubReddit Classifier",
-        "subcaption": "subcaption!",
-        "tech": [],
+        "caption": "Subreddit Classifier",
+        "subcaption": "Classify two subreddits by selecting the more efficient one after comparing the efficacy and limitations of two classification models",
+        "tech": {
+            "model": ["Naïve Bayes", "Logistic Regression", "Binary classification"],
+            "viz": ["Matplotlib"],
+            "packages": ["Scikit-Learn", "NLTK", "Pandas", "NumPy"]
+        },
+
         "descriptions": [
-            "placeholder for description1\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description2\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description3\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
+            "Binary classification model comparing Naïve Bayes and Logistic Regression",
+            "Accuracy of about 95% and ROC score of 0.995",
+            "Dataset of a total of 2000 posts from 2 different subreddits",
+            "Created a corpus using Regex for data cleaning and NLTK for preprocessing",
+            "Completed on Jupyter Notebook with Python",
         ],
-        "githubUrl": "www.github.com",
+        "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_3",
         "imageUrl": "img/team/2.jpg"
     },
     {
         "id": 3,
         "caption": "West Nile Virus Predictions",
-        "subcaption": "subcaption!",
-        "tech": [],
+        "subcaption": "Derive a plan to deploy pesticides throughout the city of Chicago by predicting the potential outbreak of West Nile Virus",
+        "tech": {
+            "model": ["Random Forest Classifier", "SVM", "Gradient Boosting"],
+            "viz": ["Matplotlib", "Seaborn"],
+            "packages": ["Flask", "Scikit-Learn", "Imblearn", "Pandas", "NumPy"]
+        },
         "descriptions": [
-            "placeholder for description1\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description2\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
-            "placeholder for description3\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis ipsam! Ipsam voluptatibus odit consequuntur.",
+            "Comparison between under/oversampling techniques such as SMOTE, ADASYN and Cluster Centroids",
+            "Binary classification model comparing Random Forest Classifier, SVM and Gradient Boosting",
+            "Accuracy of about 73% and ROC score of 0.882",
+            "Model was pickled and deployed on local machine using Flask",
+            "Dataset of a total of 8000 rows and 12 columns",
+            "Data cleaned and wrangled using Pandas",
+            "Feature engineered seemed to have the highest importance",
+            "Completed on Jupyter Notebook with Python"
         ],
-        "githubUrl": "www.github.com",
-        "imageUrl": "img/team/2.jpg"
+        "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_4",
+        "imageUrl": "https://images.unsplash.com/photo-1585960691786-a593e76d3847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
     },
     {
         "id": 4,
@@ -64,13 +83,13 @@ const PROJECTS = [{
         //     "Seaborn",
         //     "Scikit-Learn",
         //     "Pandas",
-        //     "Numpy",
+        //     "NumPy",
         //     "Tensorflow"
         // ],
         "tech": {
-            "Model(s) utilised": ["I tak tau the model"],
-            "Visualisation": ["Matplotlib", "Seaborn"],
-            "Packages": ["Scikit-Learn", "Pandas", "Numpy"]
+            "model": ["SARIMAX", "Facebook Prophet", "Gated Recurrent Units"],
+            "viz": ["Matplotlib", "Seaborn"],
+            "packages": ["Scikit-Learn", "Pandas", "NumPy", "pmdarima", "Tensorflow", "Keras", "Statsmodel"]
         },
         "descriptions": [
             "Data set of 18 columns of weather features and about 3000 rows of data",
@@ -80,7 +99,7 @@ const PROJECTS = [{
             "Completed with Python and Jupyter Notebook"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/Sydney%20Daily%20Rainfall%20Predictions",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "https://sydneynews.sydney/wp-content/uploads/2017/05/395358024_b9376c72c5_b-1.jpg"
     },
 ]
 

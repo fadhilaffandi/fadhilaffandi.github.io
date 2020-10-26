@@ -71,12 +71,12 @@ h6 {
 }
 
 ::-moz-selection {
-  background: #0f4c81;
+  background: #f3e89c;
   text-shadow: none;
 }
 
 ::selection {
-  background: #0f4c81;
+  background: #f3e89c;
   text-shadow: none;
 }
 
@@ -132,13 +132,13 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: #298ee6;
+  color: #57a6eb;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #1774c6;
+  color: #298ee6;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -266,6 +266,48 @@ header.masthead .intro-text .cta {
 
 #projects .portfolio-item .portfolio-content {
   text-align: left;
+}
+
+#projects .portfolio-item .portfolio-content ul.tech {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects .portfolio-item .portfolio-content ul.tech li {
+  padding: 8px;
+  margin: 3px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: 0.3s;
+}
+
+.viz {
+  background-color: rgba(64, 154, 233, 0.3);
+}
+
+.viz:hover {
+  background-color: rgba(20, 103, 175, 0.8);
+  color: white;
+}
+
+.model {
+  background-color: rgba(233, 211, 64, 0.3);
+}
+
+.model:hover {
+  background-color: rgba(152, 134, 18, 0.9);
+  color: white;
+}
+
+.packages {
+  background-color: rgba(233, 64, 110, 0.3);
+}
+
+.packages:hover {
+  background-color: rgba(175, 20, 62, 0.8);
+  color: white;
 }
 
 #experiences .portfolio-item {

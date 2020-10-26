@@ -4,6 +4,9 @@ import { PROJECTS } from "./content/projects.js";
 Object.entries(PROJECTS).reverse().map(([key, item]) => {
     console.log(item);
 
+    // create caption
+    let captionContainer = buildCaption(item.caption, item.subcaption, item.githubUrl);
+
     // create thumbnail
     let thumbnailWrapper = buildImage(item.imageUrl);
 
@@ -11,8 +14,9 @@ Object.entries(PROJECTS).reverse().map(([key, item]) => {
     let descWrapper = buildDesc(item);
 
     // bundle thumbnail and description together
-    let outermostWrapper = buildElementWithClass("row portfolio-item p-0 my-5", "section");
+    let outermostWrapper = buildElementWithClass("row portfolio-item p-0 my-5 flex-wrap", "section");
 
+    outermostWrapper.appendChild(captionContainer);
     outermostWrapper.appendChild(thumbnailWrapper);
     outermostWrapper.appendChild(descWrapper);
 
@@ -23,10 +27,10 @@ Object.entries(PROJECTS).reverse().map(([key, item]) => {
 
 function buildImage(imageUrl) {
 
-    let projectImg = buildElementWithClass("img-fluid m-3", "img");
+    let projectImg = buildElementWithClass("img-fluid mx-3 mb-3", "img");
     projectImg.setAttribute("src", imageUrl);
 
-    let thumbnailWrapper = buildElementWithClass("col-lg-3 col-12 project-image d-flex justify-content-center");
+    let thumbnailWrapper = buildElementWithClass("col-lg-4 col-12 project-image d-flex justify-content-center");
     thumbnailWrapper.appendChild(projectImg);
 
     return thumbnailWrapper;
@@ -35,8 +39,6 @@ function buildImage(imageUrl) {
 
 function buildDesc(project) {
 
-    let captionContainer = buildCaption(project.caption, project.subcaption, project.githubUrl);
-
     // append descriptions statements to project
     let techSubheading = buildElementWithClass("", "h5");
     techSubheading.innerHTML = "Technologies used";
@@ -44,7 +46,7 @@ function buildDesc(project) {
 
     let descSubheading = buildElementWithClass("", "h5");
     descSubheading.innerHTML = "Description";
-    let description = buildList(project.descriptions);
+    let description = buildList(project.descriptions, "pb-2");
 
     let descContainer = buildElementWithClass("portfolio-content");
 
@@ -56,7 +58,6 @@ function buildDesc(project) {
 
 
     let descWrapper = buildElementWithClass("col-lg-8 col-12");
-    descWrapper.appendChild(captionContainer);
     descWrapper.appendChild(descContainer);
 
     return descWrapper;
@@ -75,7 +76,7 @@ function buildCaption(caption, subcaption, githubUrl) {
     githubLink.setAttribute("href", githubUrl);
     githubLink.innerHTML = "Click to see this on GitHub";
 
-    let captionContainer = buildElementWithClass(["portfolio-caption"]);
+    let captionContainer = buildElementWithClass(["portfolio-caption col-12"]);
     captionContainer.appendChild(captionHeading);
     captionContainer.appendChild(subheading);
     captionContainer.appendChild(githubLink);
@@ -84,10 +85,10 @@ function buildCaption(caption, subcaption, githubUrl) {
 }
 
 
-function buildList(content, ulClass = "") {
+function buildList(content, liClass = "", ulClass = "") {
     let ul = buildElementWithClass(ulClass, "ul");
     content.forEach(desc => {
-        let li = buildElementWithClass("", "li");
+        let li = buildElementWithClass(liClass, "li");
         li.innerHTML = desc;
         ul.appendChild(li);
     });
