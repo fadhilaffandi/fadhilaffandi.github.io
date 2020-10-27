@@ -36,6 +36,7 @@ function buildCaption(item) {
 
     let githubLink = buildElementWithClass("d-inline-block my-3 text-link", "a");
     githubLink.setAttribute("href", item.githubUrl);
+    githubLink.setAttribute("target", "_blank");
     githubLink.innerHTML = "Click to see this on GitHub";
 
     // create tech list
