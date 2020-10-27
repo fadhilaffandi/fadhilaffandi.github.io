@@ -34,7 +34,7 @@ function buildCaption(item) {
     let subheading = buildElementWithClass("portfolio-caption-subheading text-muted")
     subheading.innerHTML = item.subcaption;
 
-    let githubLink = buildElementWithClass("d-block my-3 text-link", "a");
+    let githubLink = buildElementWithClass("d-inline-block my-3 text-link", "a");
     githubLink.setAttribute("href", item.githubUrl);
     githubLink.innerHTML = "Click to see this on GitHub";
 
