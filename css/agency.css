@@ -309,11 +309,13 @@ ul.social-buttons li a img {
 }
 
 #projects .portfolio-item .project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
 }
 
 #projects .portfolio-item .project-wrapper div:first-child {
-  order: 2;
+  order: 1;
 }
 
 #projects .portfolio-item .portfolio-caption {

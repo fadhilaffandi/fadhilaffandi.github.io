@@ -7,10 +7,12 @@
         // margin-left: auto;
         // margin-right: auto;
         .project-wrapper {
+            display: flex;
+            flex-wrap: wrap;
             flex-direction: row-reverse;
         }
         .project-wrapper div:first-child {
-            order: 2;
+            order: 1;
         }
         margin-bottom: 1.5rem;
         background-color: $white;

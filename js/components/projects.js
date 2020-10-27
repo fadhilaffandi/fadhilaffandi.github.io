@@ -12,7 +12,7 @@ Object.entries(PROJECTS).reverse().map(([key, item]) => {
     let thumbnailWrapper = buildImage(item.imageUrl, item.imageAlt);
 
     // create wrapper for caption and thumbnail
-    let captNailWrapper = buildElementWithClass("project-wrapper row", "article");
+    let captNailWrapper = buildElementWithClass("project-wrapper", "article");
     captNailWrapper.appendChild(captionWrapper);
     captNailWrapper.appendChild(thumbnailWrapper);
 
