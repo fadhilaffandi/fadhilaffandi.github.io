@@ -20,10 +20,12 @@ a.text-link {
     position: relative;
     overflow: hidden;
     text-decoration: none;
-    color: lighten($secondary, 10%);
+    color: lighten($primary, 10%);
+    padding-top: 3px;
+    padding-bottom: 3px;
     &::after {
         content: "";
-        background: rgba(lighten($secondary, 10%), 0.25);
+        background: rgba(lighten($primary, 10%), 0.25);
         position: absolute;
         left: 12px;
         bottom: -6px;
@@ -36,6 +38,9 @@ a.text-link {
         bottom: -2px;
         width: 100%;
         height: 100%;
+    }
+    &:visited {
+        color: lighten($purple, 10%);
     }
 }
 

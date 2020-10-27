@@ -121,7 +121,7 @@ const PROJECTS = [{
             "Accuracy of 80%",
             "Dataset of 28 columns of features and about 570,000 rows of data",
             "Completed on Jupyter Notebook with Python",
-            "Visualisations done on Tableau, visit <a href='https://public.tableau.com/profile/fadhil.affandi#!/vizhome/RoadAccidentSafety/Casualties'>here to view/download the worksheet</a>",
+            "Visualisations done on Tableau, visit <a class='text-link' href='https://public.tableau.com/profile/fadhil.affandi#!/vizhome/RoadAccidentSafety/Casualties'>here to view/download the worksheet</a>",
         ],
         "githubUrl": "https://github.com/fadhilaffandi/uk-road-accidents",
         "imageUrl": "img/projects/accident.jpg",

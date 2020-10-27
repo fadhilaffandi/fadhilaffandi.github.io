@@ -28,12 +28,14 @@ a.text-link {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  color: #af143e;
+  color: #1467af;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 a.text-link::after {
   content: "";
-  background: rgba(175, 20, 62, 0.25);
+  background: rgba(20, 103, 175, 0.25);
   position: absolute;
   left: 12px;
   bottom: -6px;
@@ -47,6 +49,10 @@ a.text-link:hover:after {
   bottom: -2px;
   width: 100%;
   height: 100%;
+}
+
+a.text-link:visited {
+  color: #8614af;
 }
 
 .text-primary {
