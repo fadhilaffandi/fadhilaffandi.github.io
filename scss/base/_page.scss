@@ -8,6 +8,7 @@ html {
 
 body {
     overflow-x: hidden;
+    color: $gray-800;
     @include body-font;
 }
 
@@ -37,6 +38,7 @@ h4,
 h5,
 h6 {
     font-weight: 600;
+    color: $black;
     @include heading-font;
 }
 
@@ -93,7 +95,7 @@ ul.social-buttons {
             height: 50px;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
-            transition: all 0.3s;
+            transition: all 0.5s;
             color: white;
             border-radius: 100%;
             outline: none;
@@ -101,7 +103,8 @@ ul.social-buttons {
             &:active,
             &:focus,
             &:hover {
-                background-color: $secondary;
+                background-color: rgba($primary, 0.1);
+                color: $primary;
             }
         }
     }

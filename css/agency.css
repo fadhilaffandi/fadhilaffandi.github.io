@@ -16,6 +16,7 @@ html {
 
 body {
   overflow-x: hidden;
+  color: #343a40;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -46,6 +47,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  color: #000;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -106,7 +108,7 @@ ul.social-buttons li a {
   display: block;
   width: 50px;
   height: 50px;
-  transition: all 0.3s;
+  transition: all 0.5s;
   color: white;
   border-radius: 100%;
   outline: none;
@@ -114,7 +116,8 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #810f2e;
+  background-color: rgba(15, 76, 129, 0.1);
+  color: #0f4c81;
 }
 
 .btn {
@@ -262,7 +265,7 @@ header.masthead .intro-text .cta {
   }
 }
 
-.service-heading {
+.skills-heading {
   margin: 15px 0;
   text-transform: none;
 }
@@ -528,10 +531,6 @@ header.masthead .intro-text .cta {
 .timeline > li:after, .timeline > li:before {
   display: table;
   content: " ";
-}
-
-.timeline > li:after {
-  clear: both;
 }
 
 .timeline > li .timeline-panel {

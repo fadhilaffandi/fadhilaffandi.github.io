@@ -65,7 +65,7 @@ function buildImage(imageUrl, imageAlt) {
 
 function buildTech(project) {
     // append descriptions statements to project
-    let techSubheading = buildElementWithClass("", "h5");
+    let techSubheading = buildElementWithClass("mt-5", "h5");
     techSubheading.innerHTML = "Technologies used";
     let tech = buildInlineList(project.tech, "tech p-0");
 

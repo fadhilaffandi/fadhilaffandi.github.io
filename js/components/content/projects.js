@@ -103,7 +103,8 @@ const PROJECTS = [{
             "Completed with Python and Jupyter Notebook"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/Sydney%20Daily%20Rainfall%20Predictions",
-        "imageUrl": "https://sydneynews.sydney/wp-content/uploads/2017/05/395358024_b9376c72c5_b-1.jpg"
+        "imageUrl": "img/projects/sydney-rain.jpg",
+        "imageAlt": "Photo credit to https://sydneynews.sydney"
     },
     {
         "id": 5,
