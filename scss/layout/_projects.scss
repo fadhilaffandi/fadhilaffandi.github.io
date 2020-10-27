@@ -39,6 +39,9 @@
                     -moz-border-radius: 10px;
                     -webkit-border-radius: 10px;
                     transition: 0.3s;
+                    &:first-child {
+                        margin-left: 0;
+                    }
                 }
             }
         }
