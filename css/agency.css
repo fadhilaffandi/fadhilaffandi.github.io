@@ -262,6 +262,12 @@ header.masthead .intro-text .cta {
   }
 }
 
+.portfolio-modal img {
+  height: 150px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -441,6 +447,9 @@ header.masthead .intro-text .cta {
 
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
+  height: 150px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .portfolio-modal .modal-content button {
