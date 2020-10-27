@@ -31,6 +31,7 @@ a.text-link {
   color: #1467af;
   padding-top: 3px;
   padding-bottom: 3px;
+  word-break: break-word;
 }
 
 a.text-link::after {

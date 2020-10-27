@@ -23,6 +23,7 @@ a.text-link {
     color: lighten($primary, 10%);
     padding-top: 3px;
     padding-bottom: 3px;
+    word-break: break-word;
     &::after {
         content: "";
         background: rgba(lighten($primary, 10%), 0.25);
