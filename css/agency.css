@@ -756,27 +756,6 @@ ul.social-buttons li a img {
   }
 }
 
-.team-member {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 225px;
-  height: 225px;
-  border: 7px solid rgba(0, 0, 0, 0.1);
-}
-
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
-.team-member p {
-  margin-top: 0;
-}
-
 .footer {
   padding: 25px 0;
   text-align: center;
@@ -804,4 +783,8 @@ ul.social-buttons li a img {
 .footer ul.social-buttons li a:active, .footer ul.social-buttons li a:focus, .footer ul.social-buttons li a:hover {
   background-color: #0f4c81;
   color: white;
+}
+
+#contact {
+  height: 70vh;
 }
