@@ -16,10 +16,36 @@ p {
     line-height: 1.75;
 }
 
-a {
-    color: lighten($secondary, 20%);
+a.text-link {
+    color: lighten($secondary, 10%);
+    // &:hover {
+    //     color: lighten($primary, 20%);
+    // }
+    &:before {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: 0.15s width ease-out, 0.15s height ease-out 0.2s, 0.15s top ease-out 0.2s;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        z-index: -1;
+        background-color: $primary;
+    }
+    position: relative;
+    padding: 0 10px;
+    z-index: 1;
     &:hover {
-        color: lighten($primary, 20%);
+        text-decoration: none;
+        color: white;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        &:before {
+            width: calc(100%);
+            height: calc(100%);
+        }
     }
 }
 
@@ -82,30 +108,4 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
-    li {
-        a {
-            font-size: 20px;
-            line-height: 50px;
-            display: block;
-            width: 50px;
-            height: 50px;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.5s;
-            color: white;
-            border-radius: 100%;
-            outline: none;
-            background-color: $gray-900;
-            &:active,
-            &:focus,
-            &:hover {
-                background-color: rgba($gray-900, 0.05);
-                color: $gray-900;
-            }
-        }
-    }
 }
