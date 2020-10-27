@@ -12,25 +12,27 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_1",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "img/projects/studying.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@craftedbygc"
     },
     {
         "id": 1,
         "caption": "Ames Housing Predictions",
         "subcaption": "subcaption!",
         "tech": {
-            "model": ["Ridge", "Lasso", "Simple Linear Regressions"],
+            "model": ["Simple Linear Regressions", "Ridge", "Lasso"],
             "viz": ["Matplotlib", "Seaborn"],
             "packages": ["Scikit-Learn", "SciPy", "Pandas", "NumPy"]
         },
         "descriptions": [
             "Predictions generated through comparing Ridge, Lasso and Simple Linear Regressions",
-            "Data set of 81 columns and about 2000 rows of data",
+            "Dataset of 81 columns and about 2000 rows of data",
             "Accuracy of about 82%",
             "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_2",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "img/projects/house.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@chuttersnap"
     },
     {
         "id": 2,
@@ -50,7 +52,8 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python",
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_3",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "img/projects/reddit.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@konkarampelas"
     },
     {
         "id": 3,
@@ -72,7 +75,8 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_4",
-        "imageUrl": "https://images.unsplash.com/photo-1585960691786-a593e76d3847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        "imageUrl": "img/projects/hospital.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@adhy"
     },
     {
         "id": 4,
@@ -92,15 +96,37 @@ const PROJECTS = [{
             "packages": ["Scikit-Learn", "Pandas", "NumPy", "pmdarima", "Tensorflow", "Keras", "Statsmodel"]
         },
         "descriptions": [
-            "Data set of 18 columns of weather features and about 3000 rows of data",
+            "Dataset of 18 columns of weather features and about 3000 rows of data",
             "Predicting the amount of Rainfall in ppt per day",
             "Predictions generated through comparing SARIMAX, Fb Prophet and Gated Recurrent Units",
             "Mean Squared Error of 89mm",
             "Completed with Python and Jupyter Notebook"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/Sydney%20Daily%20Rainfall%20Predictions",
-        "imageUrl": "https://sydneynews.sydney/wp-content/uploads/2017/05/395358024_b9376c72c5_b-1.jpg"
+        "imageUrl": "img/projects/sydney-rain.jpg",
+        "imageAlt": "Photo credit to https://sydneynews.sydney"
     },
+    {
+        "id": 5,
+        "caption": "UK Road Accident Analysis",
+        "subcaption": "subcaption placeholder",
+        "tech": {
+            "model": ["Random forest classifier"],
+            "viz": ["Tableau"],
+            "packages": ["Scikit-Learn", "Pandas", "NumPy", "Imblearn"]
+        },
+        "descriptions": [
+            "Analysed the contributors to accident severity and its distribution relative to other features",
+            "Predictions and feature importance generated through comparing Random Forest Classifier",
+            "Accuracy of 80%",
+            "Dataset of 28 columns of features and about 570,000 rows of data",
+            "Completed on Jupyter Notebook with Python",
+            "Visualisations done on Tableau, visit <a class='text-link' href='https://public.tableau.com/profile/fadhil.affandi#!/vizhome/RoadAccidentSafety/Casualties'>here to view/download the worksheet</a>",
+        ],
+        "githubUrl": "https://github.com/fadhilaffandi/uk-road-accidents",
+        "imageUrl": "img/projects/accident.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@michaeljinphoto"
+    }
 ]
 
 export { PROJECTS };
