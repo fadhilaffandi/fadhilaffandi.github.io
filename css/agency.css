@@ -164,6 +164,7 @@ img::-moz-selection {
   color: #57a6eb;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
+  font-style: italic;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -193,7 +194,6 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
-    font-style: italic;
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {

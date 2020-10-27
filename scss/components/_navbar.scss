@@ -21,7 +21,7 @@
             color: lighten($primary, 25%);
         }
         font-weight: 600;
-        // font-style: italic;
+        font-style: italic;
     }
     .navbar-nav {
         .nav-item {
@@ -52,7 +52,6 @@
         background-color: transparent;
         .navbar-brand {
             font-size: 1.75em;
-            font-style: italic;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
