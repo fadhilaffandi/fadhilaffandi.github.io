@@ -99,12 +99,12 @@ ul.social-buttons {
             color: white;
             border-radius: 100%;
             outline: none;
-            background-color: $primary;
+            background-color: $gray-900;
             &:active,
             &:focus,
             &:hover {
-                background-color: rgba($primary, 0.1);
-                color: $primary;
+                background-color: rgba($gray-900, 0.05);
+                color: $gray-900;
             }
         }
     }
