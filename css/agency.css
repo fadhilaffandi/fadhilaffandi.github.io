@@ -308,6 +308,14 @@ ul.social-buttons li a img {
   background-color: #fff;
 }
 
+#projects .portfolio-item .project-wrapper {
+  flex-direction: row-reverse;
+}
+
+#projects .portfolio-item .project-wrapper div:first-child {
+  order: 2;
+}
+
 #projects .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: left;

@@ -11,14 +11,18 @@ Object.entries(PROJECTS).reverse().map(([key, item]) => {
     // create thumbnail
     let thumbnailWrapper = buildImage(item.imageUrl, item.imageAlt);
 
+    // create wrapper for caption and thumbnail
+    let captNailWrapper = buildElementWithClass("project-wrapper row", "article");
+    captNailWrapper.appendChild(captionWrapper);
+    captNailWrapper.appendChild(thumbnailWrapper);
+
     // create project description
     let descWrapper = buildDesc(item);
 
     // bundle thumbnail and description together
     let outermostWrapper = buildElementWithClass("row portfolio-item p-4 my-5 flex-wrap", "section");
 
-    outermostWrapper.appendChild(captionWrapper);
-    outermostWrapper.appendChild(thumbnailWrapper);
+    outermostWrapper.appendChild(captNailWrapper);
     outermostWrapper.appendChild(descWrapper);
 
     document.querySelector("#projects .content-wrapper")
@@ -88,7 +92,7 @@ function buildDesc(project) {
     descSubheading.innerHTML = "Description";
     let description = buildList(project.descriptions, "pb-2");
 
-    let descWrapper = buildElementWithClass("col-12 project-description");
+    let descWrapper = buildElementWithClass("col-12 project-description", "article");
     descWrapper.appendChild(descSubheading);
     descWrapper.appendChild(description);;
 
