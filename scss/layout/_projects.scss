@@ -1,4 +1,7 @@
 #projects {
+    .section-subheading {
+        line-height: 2.2;
+    }
     .portfolio-item {
         // max-width: 25rem;
         // margin-left: auto;
@@ -25,7 +28,7 @@
                 list-style-type: none;
                 display: flex;
                 flex-wrap: wrap;
-                li {
+                span {
                     padding: 8px;
                     margin: 3px;
                     border-radius: 10px;
