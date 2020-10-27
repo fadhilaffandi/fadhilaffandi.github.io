@@ -119,7 +119,7 @@ const PROJECTS = [{
             "Visualisations done on Tableau, visit <a href='https://public.tableau.com/profile/fadhil.affandi#!/vizhome/RoadAccidentSafety/Casualties'>here to view/download the worksheet</a>",
         ],
         "githubUrl": "https://github.com/fadhilaffandi/uk-road-accidents",
-        "imageUrl": ""
+        "imageUrl": "img/projects/accident.jpg"
     }
 ]
 

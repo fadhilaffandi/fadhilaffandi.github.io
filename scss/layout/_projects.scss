@@ -10,9 +10,9 @@
         background-color: $white;
         .portfolio-caption {
             padding: 1.5rem;
-            text-align: center;
+            text-align: left;
             .portfolio-caption-heading {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 font-family: $headings-font-family;
                 font-weight: $headings-font-weight;
                 margin-bottom: 0;
@@ -21,6 +21,10 @@
                 font-style: italic;
                 font-family: $subheadings-font-family;
             }
+        }
+        .project-image,
+        .project-description {
+            padding: 1.5rem;
         }
         .portfolio-content {
             text-align: left;
@@ -37,6 +41,10 @@
                     transition: 0.3s;
                 }
             }
+        }
+        img {
+            object-fit: contain;
+            max-width: 100%;
         }
     }
 }
