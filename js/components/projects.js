@@ -9,7 +9,7 @@ Object.entries(PROJECTS).reverse().map(([key, item]) => {
     let captionWrapper = buildCaption(item);
 
     // create thumbnail
-    let thumbnailWrapper = buildImage(item.imageUrl);
+    let thumbnailWrapper = buildImage(item.imageUrl, item.imageAlt);
 
     // create project description
     let descWrapper = buildDesc(item);
@@ -51,10 +51,11 @@ function buildCaption(item) {
 }
 
 
-function buildImage(imageUrl) {
+function buildImage(imageUrl, imageAlt) {
 
     let projectImg = buildElementWithClass("img-fluid", "img");
     projectImg.setAttribute("src", imageUrl);
+    projectImg.setAttribute("alt", imageAlt)
 
     let thumbnailWrapper = buildElementWithClass("col-lg-4 col-12 project-image d-flex justify-content-center");
     thumbnailWrapper.appendChild(projectImg);

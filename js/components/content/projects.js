@@ -12,7 +12,8 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_1",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "img/projects/studying.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@craftedbygc"
     },
     {
         "id": 1,
@@ -30,7 +31,8 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_2",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "img/projects/house.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@chuttersnap"
     },
     {
         "id": 2,
@@ -50,7 +52,8 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python",
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_3",
-        "imageUrl": "img/team/2.jpg"
+        "imageUrl": "img/projects/reddit.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@konkarampelas"
     },
     {
         "id": 3,
@@ -72,7 +75,8 @@ const PROJECTS = [{
             "Completed on Jupyter Notebook with Python"
         ],
         "githubUrl": "https://github.com/fadhilaffandi/dsiprojects/tree/master/project_4",
-        "imageUrl": "https://images.unsplash.com/photo-1585960691786-a593e76d3847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        "imageUrl": "img/projects/hospital.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@adhy"
     },
     {
         "id": 4,
@@ -119,7 +123,8 @@ const PROJECTS = [{
             "Visualisations done on Tableau, visit <a href='https://public.tableau.com/profile/fadhil.affandi#!/vizhome/RoadAccidentSafety/Casualties'>here to view/download the worksheet</a>",
         ],
         "githubUrl": "https://github.com/fadhilaffandi/uk-road-accidents",
-        "imageUrl": "img/projects/accident.jpg"
+        "imageUrl": "img/projects/accident.jpg",
+        "imageAlt": "Photo credit to https://unsplash.com/@michaeljinphoto"
     }
 ]
 
