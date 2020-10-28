@@ -109,7 +109,7 @@ const PROJECTS = [{
     {
         "id": 5,
         "caption": "UK Road Accident Analysis",
-        "subcaption": "subcaption placeholder",
+        "subcaption": "An analysis of road accidents in the UK and factors contributing to their severities",
         "tech": {
             "model": ["Random forest classifier"],
             "viz": ["Tableau"],
